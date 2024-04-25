@@ -24,7 +24,7 @@
             <div id="wrap">
                 <div id="text">
                     <div id="code"> <font color="#363131"> <span class="say"></span><br>
-                      <span class="say">Dear Ha,</span><br>  
+                      <span class="say">Dear An,</span><br>  
                       <span class="say"></span><br>
                       <span class="say">Ever since the day we met</span><br>
                       <span class="say"></span><br>
@@ -189,21 +189,21 @@
             }
         }));
 
-        var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2023, 7, 18); 			//时间年月日
-		    together.setHours(0);						//小时	
-		    together.setMinutes(0);					//分钟
-		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(0);				//秒第二位
+        ///var textAnimate = eval(Jscex.compile("async", function () {
+		    ///var together = new Date();
+		    ///together.setFullYear(2023, 7, 18); 			//时间年月日
+		    ///together.setHours(0);						//小时	
+		    ///together.setMinutes(0);					//分钟
+		    ///together.setSeconds(0);					//秒前一位
+		    ///together.setMilliseconds(0);				//秒第二位
 
-		    $("#code").show().typewriter();
-            $("#clock-box").fadeIn(500);
-            while (true) {
-                timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
-            }
-        }));
+		///    $("#code").show().typewriter();
+         ///   $("#clock-box").fadeIn(500);
+   ///         while (true) {
+  ///              timeElapse(together);
+ ///               $await(Jscex.Async.sleep(1000));
+///            }
+///        }));
 
         var runAsync = eval(Jscex.compile("async", function () {
             $await(seedAnimate());
@@ -211,7 +211,7 @@
             $await(flowAnimate());
             $await(moveAnimate());
 
-            textAnimate().start();
+   ///         textAnimate().start();
 
             $await(jumpAnimate());
         }));
